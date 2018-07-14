@@ -1,0 +1,57 @@
+# 2 /w pruning
+Accuracy of plane : 64 %
+Accuracy of   car : 82 %
+Accuracy of  bird : 31 %
+Accuracy of   cat : 20 %
+Accuracy of  deer : 43 %
+Accuracy of   dog : 53 %
+Accuracy of  frog : 53 %
+Accuracy of horse : 74 %
+Accuracy of  ship : 66 %
+Accuracy of truck : 44 %
+Accuracy of the network on the 10000 test images: 53 %
+python3 main.py prune  892.46s user 18.47s system 610% cpu 2:29.24 total
+
+# 2 /w pruning
+Finished Training
+Accuracy of plane : 52 %
+Accuracy of   car : 61 %
+Accuracy of  bird : 25 %
+Accuracy of   cat : 24 %
+Accuracy of  deer : 52 %
+Accuracy of   dog : 56 %
+Accuracy of  frog : 68 %
+Accuracy of horse : 70 %
+Accuracy of  ship : 66 %
+Accuracy of truck : 63 %
+Accuracy of the network on the 10000 test images: 54 %
+python3 main.py noprune  1007.38s user 23.17s system 604% cpu 2:50.42 total
+
+# 6 /wo pruning
+Accuracy of plane : 71 %
+Accuracy of   car : 72 %
+Accuracy of  bird : 55 %
+Accuracy of   cat : 45 %
+Accuracy of  deer : 60 %
+Accuracy of   dog : 51 %
+Accuracy of  frog : 67 %
+Accuracy of horse : 72 %
+Accuracy of  ship : 71 %
+Accuracy of truck : 63 %
+Accuracy of the network on the 10000 test images: 63 %
+python3 main.py noprune  2624.33s user 58.82s system 628% cpu 7:07.17 total
+
+# 6 /w pruning
+Finished Training
+Accuracy of plane : 72 %
+Accuracy of   car : 80 %
+Accuracy of  bird : 42 %
+Accuracy of   cat :  9 %
+Accuracy of  deer : 38 %
+Accuracy of   dog : 55 %
+Accuracy of  frog : 84 %
+Accuracy of horse : 61 %
+Accuracy of  ship : 67 %
+Accuracy of truck : 42 %
+Accuracy of the network on the 10000 test images: 55 %
+python3 main.py prune  2154.69s user 45.05s system 648% cpu 5:39.17 total
