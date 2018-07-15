@@ -2,7 +2,6 @@ include("datasets.jl")
 
 
 G_training_dataset = get_addition_dataset(5000)
-
 G_nr_batches = 100
 G_nr_runs = 50
 G_nr_updates = round(Int64, length(G_training_dataset)/G_nr_batches) * G_nr_runs

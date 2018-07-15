@@ -31,7 +31,7 @@ def prune_net(l1,l2):
 
     eliminate = []
     for i in range(0,len(o_layer.weight.data)):
-        if sum(o_layer.weight.data[i]) < -1:
+        if sum(o_layer.weight.data[i]) < 0:
             eliminate.append(i)
 
     l1 = nn.Linear(o_layer.in_features, o_layer.out_features-len(eliminate))
@@ -75,7 +75,7 @@ class Net(nn.Module):
 
 
 net = Net()
-print(net)
+print(net.conv1)
 
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(net.parameters(), lr=0.001, momentum=0.9)
@@ -97,7 +97,7 @@ for epoch in range(6):  # loop over the dataset multiple times
 
         # print statistics
         running_loss += loss.item()
-        if i % 1000 == 999:
+        if i % 2000 == 1999:
             print('[%d, %5d] loss: %.3f' % (epoch + 1, i + 1, running_loss / 2000))
             running_loss = 0.0
 
